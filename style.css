@@ -33,6 +33,7 @@
     position: fixed;
     width: 100%;
     height: 90px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -41,6 +42,7 @@
 display: flex;
 align-items: center;
 justify-content: center;
+
 
 }
 
@@ -107,13 +109,143 @@ justify-content: center;
 }
 
 
-    
-
-
-
-
-
 
     
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 4rem;
     
     
+}
+
+
+.subtitle {
+    padding-top: 100px;
+}
+
+.container {
+    
+display: flex;
+
+}
+.card {
+    
+margin: 20px;
+border-radius: 8px;
+overflow: hidden;
+background: #EBEBEB;
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+
+
+
+}
+
+
+
+.img {
+    
+    height: 250px;
+    display: flex;
+    justify-content: center;
+
+
+    
+}
+
+.contenido {
+    text-align: center;
+    padding: 15px;
+}
+
+.card .contenido p {
+    line-height: 1.5;
+    color: #080708;
+}
+
+.card .contenido h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}    
+
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    color: #080708;
+    border: solid 1px #080708 ;
+    border-radius: 4px;
+    transition: all 400ms ease;
+
+}
+
+.card .contenido a:hover {
+background-color: #080708;
+color: #EBEBEB;
+}
+
+
+.footer {
+    background-color: #080708;
+    
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-link {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-link h4 {
+    font-size: 20px;
+    color: #EBEBEB;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.footer-link ul li  {
+    font-size: 18px;
+    text-decoration: none;
+    color: #EBEBEB;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #EBEBEB;
+    transition: all .5s ease;
+
+}
+
+.social-link a :hover {
+    background-color: #00c3ff;
+}
+
+@media (max-widht:991px) {
+    .footer-row {
+        text-align: center;
+    }
+    .footer-link {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
